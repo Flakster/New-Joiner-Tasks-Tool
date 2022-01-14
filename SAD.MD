@@ -17,12 +17,11 @@ This project is intended to develop a tool that allow the administrative staff o
 
 ## Assumptions
 
-> The profiles are going to be uploaded individually
+The profiles are going to be uploaded individually
 
 ## Business processes
 
 The new joiners will be incorporated to the company regularly, and their information will be loaded as soon as it is available
-
 
 ## Non-functional Requirements (Quality Attributes)
 
@@ -46,15 +45,13 @@ Linters must be used to ensure the code quality
 
 ## Solution Context Diagram
 
-> This is a high level context diagram that shows system as a black box, its main user personas, and external integrations
-
-****    will be added soon
+> High level context diagram that shows system as a black box, its main user personas, and external integrations
+> will be added soon
 
 ## Solution Diagram
 
-> In this section you create the solution diagram showing different components that make the system. This is a zoom-in view of the system you are building.
-
-****    will be added soon
+> Solution diagram showing different components that make the system. This is a zoom-in view of the system.
+> will be added soon
 
 ## Technology Stack
 
