@@ -2,7 +2,8 @@
 
 ## High level requirements
 
-This project is intended to develop a tool that allow the administrative staff of the company to create, register and manage some of the tasks that a new joiner should work on
+This project is intended to develop a tool that allows the administrative staff of the company to create, register and manage some of the tasks that a new joiner should work on. The primary source of information will be the files with the new joiner profile, from which the basic data will be extracted. This data will be available from the rest of components of the system to be persisted in a database. The tasks will be managed through a basic CRUD and some reports will be required
+
 
 ## User Roles and Reponsibilities
 
@@ -74,5 +75,5 @@ Linters must be used to ensure the code quality
 ## Architecture Decisions
 
 * Using microservices
-* Run at least one service in the cloud
-* Use a message broker for communication betweeen services
+* At least one service will run in the cloud
+* Communication between services will be performed through a message broker
