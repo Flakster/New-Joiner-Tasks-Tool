@@ -38,9 +38,7 @@ Linters must be used to ensure the code quality
 
 ## Functional Layer Diagram
 
-> Functional components that will make the system. Which actor will work on which functional part.
-
- ****    will be added soon
+<img width="465" alt="new joiner task tool" src="https://user-images.githubusercontent.com/53324035/149567804-61fc05d7-7c26-4c06-a096-5a10b6db4130.PNG">
 
 ## Architecture Style
 
