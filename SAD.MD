@@ -18,7 +18,8 @@ This project is intended to develop a tool that allows the administrative staff 
 
 ## Assumptions
 
-The profiles are going to be uploaded individually
+* The profiles are going to be uploaded individually
+* The profiles meet a fixed format
 
 ## Business processes
 
