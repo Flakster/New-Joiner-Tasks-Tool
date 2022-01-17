@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps:
 Give a ⭐️ if you like this project!
  
 ## License
-This project is Licensed
+This project is [MIT](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/main/LICENSE) Licensed
 
 ## Author
 👤 Carlos Santamaría
