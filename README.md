@@ -1,6 +1,6 @@
 # New Joiner Tasks Tool
 
-An application that allows the administrative staff of a company to upload PDF or docx files with the profile of the new employees, in order to extract basic information to be shared with some other services by usign a message broker. These services are: persistancy of extracted info in a database, tasks management and assignment, and, reports creation.
+An application that allows the administrative staff from a company to upload PDF or docx files with the profile of the new employees, in order to extract basic information to be shared with some other services by usign a message broker. These services are: persistancy of extracted info in a database, tasks management and assignment, and, reports creation.
 
 ## Screenshots
 
