@@ -4,8 +4,9 @@ const app = require('./src/app');
 
 async function main() {
     const port = app.get('port')
-    await app.listen(port)
-    console.log('Server listening on port: ', port )
+    await app.listen(port, () => {
+        console.log('Server is now listening on port: ', port )
+    })
 }
 
 main();
