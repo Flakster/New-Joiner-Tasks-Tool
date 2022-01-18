@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Flakster/New-Joiner-Tasks-Tool#readme",
   "dependencies": {
     "dotenv": "^14.2.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "formidable": "^2.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
