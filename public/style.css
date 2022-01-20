@@ -1,6 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+a:link, a:visited {
+    color: rgb(7, 81, 150);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 .frame {
     margin: auto;
     width: 50%;
@@ -8,6 +15,7 @@ body {
 }
 
 .subframe {
+    text-align: initial;
     width: 95%;
     margin: auto;
     border: 1px solid gray;
