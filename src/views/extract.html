@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Profile upload</title>
+    <title>information extraction</title>
 </head>
 <body>
     <div class="frame">
-        <h1>Profiles upload</h1>
+        <h1>Profiles information extraction</h1>
         <div class="subframe">
-            <form action="/upload" method="POST" enctype="multipart/form-data">
-                <input type="file" name="uploadFile">
-                <input type="submit" value="Upload" >
+            <form action="/extract" method="POST" enctype="multipart/form-data">
+                <input type="file" name="filename">
+                <input type="submit" value="extract" >
             </form>
         </div>
         <a href="/">Home</a>
