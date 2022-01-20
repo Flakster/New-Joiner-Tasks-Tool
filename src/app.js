@@ -53,7 +53,7 @@ app.post('/upload', (req, res) => {
                  role: text1.substring(text1.indexOf('Role')+5,text1.indexOf('Summary')).replace(/[\n\r]/g,' ').trim(),
                  summary: text1.substring(text1.indexOf('Summary')+7).replace(/[\n\r]/g,' ').trim(),
              }
-             res.json(extract) // this is the extracted info as a JSON object
+             console.log(extract)
          }))
     })
 })
