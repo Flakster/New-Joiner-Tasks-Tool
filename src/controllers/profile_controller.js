@@ -1,5 +1,8 @@
 const path = require('path');
 const extractText = require('office-text-extractor');
+const strings = require('../helpers/strings');
+const conf = require('../utils/config');
+const amqp = require('amqplib/callback_api');
 const multer = require('multer');
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -33,13 +36,21 @@ module.exports = {
             res.sendFile(path.join(__dirname , '../views/success.html'))
             extractText(path.join(req.file.destination, req.file.originalname))
              .then((text =>{
-                 const text1 = text.substring(text.indexOf('Summary:'),text.indexOf('Domain Experience'))
-                 const extract = {
-                     name : text1.substring(5,text1.indexOf('Role')).replace(/[\n\r]/g,' ').trim(),
-                     role: text1.substring(text1.indexOf('Role')+5,text1.indexOf('Summary')).replace(/[\n\r]/g,' ').trim(),
-                     summary: text1.substring(text1.indexOf('Summary')+7).replace(/[\n\r]/g,' ').trim(),
-                 }
-                 console.log(extract)
+                const extracted_info = strings.extract_info(text)
+                 amqp.connect(`amqps://${conf.MB_USER}:${conf.MB_PASS}@${conf.MB_URL}`, (error0, connection) => {
+                    if (error0) {
+                        throw error0;
+                    }
+                    connection.createChannel(function(error1, channel) {
+                        if (error1) {
+                        throw error1;
+                        }
+                        var queue = 'Profiles';
+                        channel.assertQueue(queue, {durable: false});
+                        channel.sendToQueue(queue, Buffer.from(extracted_info));
+                        console.log(" [x] Message sent %s: ", extracted_info);
+                    });
+                    });
              }))
         })
     } 
