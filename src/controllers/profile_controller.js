@@ -1,8 +1,8 @@
 const path = require('path');
 const extractText = require('office-text-extractor');
 const strings = require('../helpers/strings');
-const conf = require('../utils/config');
-const amqp = require('amqplib/callback_api');
+const message_broker = require('../helpers/message_broker');
+
 const multer = require('multer');
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -35,22 +35,9 @@ module.exports = {
             }
             res.sendFile(path.join(__dirname , '../views/success.html'))
             extractText(path.join(req.file.destination, req.file.originalname))
-             .then((text =>{
+            .then((text =>{
                 const extracted_info = strings.extract_info(text)
-                 amqp.connect(`amqps://${conf.MB_USER}:${conf.MB_PASS}@${conf.MB_URL}`, (error0, connection) => {
-                    if (error0) {
-                        throw error0;
-                    }
-                    connection.createChannel(function(error1, channel) {
-                        if (error1) {
-                        throw error1;
-                        }
-                        var queue = 'Profiles';
-                        channel.assertQueue(queue, {durable: false});
-                        channel.sendToQueue(queue, Buffer.from(extracted_info));
-                        console.log(" [x] Message sent %s: ", extracted_info);
-                    });
-                    });
+                message_broker.send(extracted_info)
              }))
         })
     } 
