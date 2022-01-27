@@ -31,14 +31,20 @@ module.exports = {
     process_file: (req, res) =>{
         upload.single('uploadFile')(req, res, err => {
             if (err){
-                res.sendFile(path.join(__dirname, '../views/error.html'))
+                res.status(400).sendFile(path.join(__dirname, '../views/error1.html'))
+            }
+            if (!req.file){
+                console.log("No file was picked")
+                return res.status(400).sendFile(path.join(__dirname, '../views/error2.html'))
             }
             res.sendFile(path.join(__dirname , '../views/success.html'))
             extractText(path.join(req.file.destination, req.file.originalname))
             .then((text =>{
-                const extracted_info = strings.extract_info(text)
-                message_broker.send(extracted_info)
+                message_broker.send(strings.extract_info(text))
              }))
         })
-    } 
+    },
+    receive_profiles: () =>{
+        message_broker.receive();
+    }
 }
