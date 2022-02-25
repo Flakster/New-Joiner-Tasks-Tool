@@ -7,6 +7,10 @@ An application that allows the administrative staff from a company to upload PDF
 ![New Joiner Tasks application](https://user-images.githubusercontent.com/53324035/155766774-f848d3ca-af5a-4d4f-88be-52978176f2ef.png)
 
 
+## Software Architecture Document
+
+See the software architecture document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD) 
+
 ## Built with
 
   * Node JS
