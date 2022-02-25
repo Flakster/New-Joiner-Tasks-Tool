@@ -40,16 +40,15 @@ module.exports = {
             res.sendFile(path.join(__dirname , '../views/success.html'))
             extractText(path.join(req.file.destination, req.file.originalname))
             .then((text =>{
-                message_broker.send(strings.extract_info(text))
+                message_broker.sendMsg(strings.extract_info(text))
             }))
             .catch(e =>{
                 console.log(e)
                 return
-            })
-            
+            }) 
         })
     },
     receive_profiles: () =>{
-        message_broker.receive();
+        message_broker.receiveMsg();
     }
 }

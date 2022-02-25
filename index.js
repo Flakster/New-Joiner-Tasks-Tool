@@ -5,7 +5,7 @@ const app = require('./src/app');
 async function main() {
     const port = app.get('port')
     await app.listen(port, () => {
-        console.log('Server is now listening on port: ', port )
+        console.log('Profiles service is now listening on port: ', port )
     })
 }
 
