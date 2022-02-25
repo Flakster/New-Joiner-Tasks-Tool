@@ -12,8 +12,8 @@ This project is intended to develop a tool that allows the administrative staff 
 
 ## Constraints
 
-1. The components interaction will be performed through a messsage broker
-2. At least three different programming languages will be used
+1. The components interaction will be performed through a messsage broker and API end-points
+2. Different programming languages will be used
 3. The project must be developed within 4 weeks
 
 ## Assumptions
@@ -39,7 +39,7 @@ Linters must be used to ensure the code quality
 
 ## Functional Layer Diagram
 
-<img width="465" alt="new joiner task tool" src="https://user-images.githubusercontent.com/53324035/149567804-61fc05d7-7c26-4c06-a096-5a10b6db4130.PNG">
+![New Joiner Tasks application](https://user-images.githubusercontent.com/53324035/155766774-f848d3ca-af5a-4d4f-88be-52978176f2ef.png)
 
 ## Architecture Style
 
@@ -60,21 +60,23 @@ Linters must be used to ensure the code quality
 * Programming languages: 
   * NodeJS: For the libraries availability
   * Go: For its modularity design
-  * Python: For its simplicity 
 * Technologies: 
   * Git
   * Postman
-  * Swagger
   * Agile
+  * Serverless
   * Unit testing
   * Linters
 * API Style: 
   * REST API level 2
 * Cloud: 
-  * AWS
+  * AWS- SQS
+  * AWS- Lambda Functions
+  * AWS DynamoDB
+  * Aws Api Getway
 
 ## Architecture Decisions
 
 * Using microservices
 * At least one service will run in the cloud
-* Communication between services will be performed through a message broker
+* Communication between services will be performed through a message broker and API end-points
