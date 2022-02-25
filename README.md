@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps:
 
 6. More to be added soon
 
-## See a live demo soon
+## Online API Documentation ([click here](https://documenter.getpostman.com/view/19268372/UVkpNauv))
 
 
 ## Potential future features
