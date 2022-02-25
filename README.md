@@ -1,4 +1,4 @@
-# New Joiner Tasks Tool
+# New Joiners Tasks Tool
 
 An application that allows the administrative staff from a company to upload PDF or docx files with the profile of the new employees, in order to extract basic information to be shared with some other services by usign a message broker. These services are: persistancy of extracted info in a database, tasks management and assignment, and, reports creation.
 
@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple example steps:
 
 ## Online API Documentation 
 
-To see the API documentation on line please[click here](https://documenter.getpostman.com/view/19268372/UVkpNauv)
+To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv)
 
 
 ## Potential future features
