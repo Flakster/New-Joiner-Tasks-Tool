@@ -26,19 +26,19 @@ See the software architecture document by [clicking here](https://github.com/Fla
 This project is composed of the following microservices
 
 - New joiner profiles management
-- Profiles storage ([link to the repository](https://github.com/Flakster/New-Joiner-Persistence))
-- Tasks management ([link to the repository](https://github.com/Flakster/tasks-management))
-- Reports service ([link to the repository](https://github.com/Flakster/New-joiner-tasks-reports))
+- Profiles storage ([link to the repository](https://github.com/Flakster/New-Joiner-Persistence target="_blank"))
+- Tasks management ([link to the repository](https://github.com/Flakster/tasks-management target="_blank"))
+- Reports service ([link to the repository](https://github.com/Flakster/New-joiner-tasks-reports target="_blank"))
 
 
 ## Software Architecture Document
 
-Check this document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD){:target="_blank"}
+Check this document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD target="_blank")
 
 
 ## Online API Documentation 
 
-To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv){:target="_blank"}
+To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv target="_blank")
 
 ## Getting Started:
 
