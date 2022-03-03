@@ -9,7 +9,7 @@ An application that allows the administrative staff from a company to upload PDF
 
 ## Software Architecture Document
 
-See the software architecture document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD) 
+Check this document by <a href="https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD" target="_blank"> clicking here </a>
 
 ## Built with
 
@@ -25,20 +25,15 @@ See the software architecture document by [clicking here](https://github.com/Fla
 
 This project is composed of the following microservices
 
-- New joiner profiles management
-- Profiles storage ([link to the repository](https://github.com/Flakster/New-Joiner-Persistence))
-- Tasks management ([link to the repository](https://github.com/Flakster/tasks-management))
-- Reports service ([link to the repository](https://github.com/Flakster/New-joiner-tasks-reports))
+- New joiner profiles management (this repository)
+- Profiles storage <a href="https://github.com/Flakster/New-Joiner-Persistence" target="_blank">link to the repository</a>
+- Tasks management <a href="https://github.com/Flakster/tasks-management" target="_blank">link to the repository</a>
+- Reports service <a href="https://github.com/Flakster/New-joiner-tasks-reports" target="_blank">link to the repository</a>
 
-
-## Software Architecture Document
-
-Check this document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD)
-Open in a <a href="https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD"> new window </a>
 
 ## Online API Documentation 
 
-To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv)
+To see the API documentation online <a href="https://documenter.getpostman.com/view/19268372/UVkpNauv" target="_blank"> click here </a>
 
 ## Getting Started:
 
