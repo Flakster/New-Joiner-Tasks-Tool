@@ -30,6 +30,16 @@ This project is composed of the following microservices
 - Tasks management ([link to the repository](https://github.com/Flakster/tasks-management))
 - Reports service ([link to the repository](https://github.com/Flakster/New-joiner-tasks-reports))
 
+
+## Software Architecture Document
+
+Check this document by [clicking here](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD){:target="_blank"}
+
+
+## Online API Documentation 
+
+To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv){:target="_blank"}
+
 ## Getting Started:
 
 To get a local copy up and running follow these simple example steps:
@@ -46,10 +56,6 @@ To get a local copy up and running follow these simple example steps:
 5. Change the current directory to the newly created folder
 
 6. More to be added soon
-
-## Online API Documentation 
-
-To see the API documentation online [click here](https://documenter.getpostman.com/view/19268372/UVkpNauv)
 
 
 ## Potential future features

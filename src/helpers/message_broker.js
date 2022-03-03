@@ -15,7 +15,7 @@ const sendMsg = (msg) =>{
 };
 
 const receiveMsg = () =>{
-  params = {
+  const params = {
     MaxNumberOfMessages: 1,
     QueueUrl: 'https://sqs.us-east-1.amazonaws.com/660828509387/Profiles'
   };

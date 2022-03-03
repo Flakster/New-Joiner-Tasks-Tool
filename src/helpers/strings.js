@@ -13,6 +13,7 @@ const string_set = str => {
     const text = str.substring(labels[starting])
     return text.replace(/[\n\r]/g,' ').trim()
 }
+
 // Organize skills in an object
 const object_set = str =>{
     let arr = str.split('\n\n').filter(e => e!=='').splice(4)
