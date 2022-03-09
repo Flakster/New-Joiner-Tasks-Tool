@@ -15,6 +15,7 @@ This project is intended to develop a tool that allows the administrative staff 
 1. The components interaction will be performed through a messsage broker and API end-points
 2. Different programming languages will be used
 3. The project must be developed within 4 weeks
+4. At least one service should run in the cloud
 
 ## Assumptions
 
