@@ -1,22 +1,39 @@
-# New Joiner Tasks Tool
+# New Joiners Tasks Tool
 
 An application that allows the administrative staff from a company to upload PDF or docx files with the profile of the new employees, in order to extract basic information to be shared with some other services by usign a message broker. These services are: persistancy of extracted info in a database, tasks management and assignment, and, reports creation.
 
-## Screenshots
+## Outline
 
-Will be shared soon
+![New Joiner Tasks application](https://user-images.githubusercontent.com/53324035/155766774-f848d3ca-af5a-4d4f-88be-52978176f2ef.png)
+
+
+## Software Architecture Document
+
+Check this document by <a href="https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/development/SAD.MD" target="_blank"> clicking here </a>
 
 ## Built with
 
-  * HTML5
-  * CSS3
   * Node JS
   * Go Lang
-  * Python
+  * PostgreSQL
+  * Amazon Lambda functions
+  * Amazon DynamoDB
+  * Amazon API Gateway
+  * Amazon Simple Queue Service
   
-## Prerequisites
+## Microservices
 
-Will be shared soon
+This project is composed of the following microservices
+
+- New joiner profiles management (this repository)
+- Profiles storage <a href="https://github.com/Flakster/New-Joiner-Persistence" target="_blank">link to the repository</a>
+- Tasks management <a href="https://github.com/Flakster/tasks-management" target="_blank">link to the repository</a>
+- Reports service <a href="https://github.com/Flakster/New-joiner-tasks-reports" target="_blank">link to the repository</a>
+
+
+## Online API Documentation 
+
+To see the API documentation online <a href="https://documenter.getpostman.com/view/19268372/UVkpNauv" target="_blank"> click here </a>
 
 ## Getting Started:
 
@@ -35,13 +52,15 @@ To get a local copy up and running follow these simple example steps:
 
 6. More to be added soon
 
-## Online API Documentation ([click here](https://documenter.getpostman.com/view/19268372/UVkpNauv))
-
 
 ## Potential future features
 
+- Front end development
+
 
 ## Acknowledgments:
+
+- Alfredo de Castro
 
  
 ## Show your support
@@ -55,4 +74,3 @@ This project is [MIT](https://github.com/Flakster/New-Joiner-Tasks-Tool/blob/mai
 
 * Twitter: [@Flakster ](https://twitter.com/Flakster )
 * Github: [@Flakster](https://github.com/Flakster)
-* Email: contact@carlossantamaria.co
