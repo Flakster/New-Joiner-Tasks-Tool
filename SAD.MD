@@ -43,30 +43,20 @@ Linters must be used to ensure the code quality
 
 ## Architecture Style
 
-> The proposed architecture model for this project is microservices communicated through a message broker. Some or all of these services will run in the cloud and the information will be persisted in a database
-
-## Solution Context Diagram
-
-> High level context diagram that shows system as a black box, its main user personas, and external integrations
-> will be added soon
-
-## Solution Diagram
-
-> Solution diagram showing different components that make the system. This is a zoom-in view of the system.
-> will be added soon
+> The proposed architecture model for this project is microservices communicated through a message broker and API endpoints. Some or all of these services will run in the cloud and the information will be persisted in a database
 
 ## Technology Stack
 
 * Programming languages: 
   * NodeJS: For the libraries availability
-  * Go: For its modularity design
+  * Go: For its concurrence management 
 * Technologies: 
   * Git
   * Postman
   * Agile
   * Serverless
-  * Unit testing
-  * Linters
+  * Unit testing (Jest)
+  * Linters (ESlint)
 * API Style: 
   * REST API level 2
 * Cloud: 
