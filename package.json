@@ -29,6 +29,7 @@
     "office-text-extractor": "^1.5.0"
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
     "jest": "^27.4.7",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
